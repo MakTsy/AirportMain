@@ -12,7 +12,7 @@ import java.text.ParseException;
 import java.util.UUID;
 
 public class Main{
-    private static final String URL = "http://localhost:8080";
+    private static final String URL = "http://localhost:8088";
     private static final RestTemplate restTemplate = new RestTemplate();
     private static final HttpHeaders headers = new HttpHeaders();
     private static final HttpEntity<Object> headersEntity = new HttpEntity<>(headers);
