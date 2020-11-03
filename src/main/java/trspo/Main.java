@@ -61,7 +61,7 @@ public class Main{
         bookDTO.payed = false;
         String bookString = gson.toJson(bookDTO);
         HttpEntity<String> bookJson = new HttpEntity<>(bookString, headers);
-        ResponseEntity<String> response_ticket = restTemplate.exchange(URL + "/booking",  HttpMethod.POST, bookJson, String.class);
+        ResponseEntity<String> response_ticket = restTemplate.exchange(URL + "/book",  HttpMethod.POST, bookJson, String.class);
         String ticketId = response_ticket.getBody();
         System.out.println("Ticket: "+ ticketId);
 
